@@ -11,8 +11,9 @@ namespace Singumonety.Data.Operation
         public OperationAccount FromTo { get; private set; }
         public IAmount Amount { get; private set; }
         public string Notes { get; private set; }
+        public Label[] Labels { get; private set; }
 
-        public Operation(DateOnly date, OperationType type, Account source, OperationAccount fromTo, IAmount amount, string notes, bool active)
+        public Operation(DateOnly date, OperationType type, Account source, OperationAccount fromTo, IAmount amount, string notes, Label[] labels, bool active)
         {
             Date = date;
             Type = type;
@@ -20,6 +21,7 @@ namespace Singumonety.Data.Operation
             FromTo = fromTo;
             Amount = amount;
             Notes = notes;
+            Labels = labels;
             Active = active;
         }
     }

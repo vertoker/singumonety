@@ -1,4 +1,6 @@
-﻿namespace Singumonety.Data.Accounts
+﻿using Singumonety.Data.Amount;
+
+namespace Singumonety.Data.Accounts
 {
     public class CounterParty : OperationAccount
     {
